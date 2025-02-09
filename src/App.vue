@@ -1,21 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <EmployeesList></EmployeesList>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent } from "vue";
+import EmployeesList from "./components/EmployeesList.vue";
 
 export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: "App",
+  components: { EmployeesList },
 });
 </script>
 
 <style>
+body {
+  background-color: rgba(0, 0, 0, 0.769);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
